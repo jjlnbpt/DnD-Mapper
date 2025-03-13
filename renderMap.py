@@ -18,7 +18,7 @@ cells_per_column = 34
 root = Tk()
 root.attributes("-fullscreen", True)
 
-# Open the PDF file
+# Open the image
 image_path = argv[1]
 img = Image.open(image_path)
 
@@ -31,7 +31,6 @@ scale_y = (monitor_height/ monitor_height_inches) / (original_height/ (cells_per
 new_size = (int(img.width * scale_x), int(img.height * scale_y))
 img = img.resize(new_size, Image.Resampling.BICUBIC)
 
-# Select the first page
 photo = ImageTk.PhotoImage(img)
 
 label = Label(root, image=photo)
