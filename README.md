@@ -1,8 +1,12 @@
 # DnD Map Display
 
-To run:
+First install the libraries:
 ```bash
-$> python renderMap.py <image_file>
+pip install -r requirements.txt
+```
+Then to run:
+```bash
+python renderMap.py <image_file>
 ```
 
 Depending on the map and monitor that you are using, you will need to adjust these settings.
